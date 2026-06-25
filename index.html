@@ -95,13 +95,14 @@
   .overview{padding:60px 0 30px;}
   .overview h2{font-size:34px; margin-bottom:10px;}
   .overview > .wrap > p{color:var(--text-dim); max-width:520px; margin-bottom:40px;}
-  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .cards{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
   .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:28px; transition:transform 0.2s, border-color 0.2s; box-shadow:0 4px 18px rgba(21,41,28,0.03);}
   .card:hover{transform:translateY(-4px); border-color:var(--emerald);}
   .card .num{font-family:var(--mono); font-size:13px; color:var(--text-dim);}
   .card h3{font-size:18px; margin:14px 0 10px; line-height:1.25;}
   .card p{font-size:13px; color:var(--text-dim);}
-  @media (max-width:800px){ .cards{grid-template-columns:1fr;} }
+  @media (max-width:900px){ .cards{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .cards{grid-template-columns:1fr;} }
 
   /* ---------- SKILL DETAIL SECTIONS ---------- */
   .skill-section{padding:80px 0;}
@@ -166,6 +167,19 @@
 
   .reveal{opacity:0; transform:translateY(18px); transition:opacity 0.6s ease, transform 0.6s ease;}
   .reveal.is-visible{opacity:1; transform:translateY(0);}
+
+  /* ---------- CASE STUDY TIMELINE + CALLOUT ---------- */
+  .timeline{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:36px 0;}
+  .tl-step{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 18px; box-shadow:0 4px 14px rgba(21,41,28,0.03);}
+  .skill-section.alt .tl-step{background:#fff;}
+  .tl-step .tl-label{font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--emerald); margin-bottom:8px;}
+  .tl-step p{font-size:13.5px; color:var(--text-dim); line-height:1.5; margin:0;}
+  @media (max-width:800px){ .timeline{grid-template-columns:repeat(2,1fr);} }
+
+  .callout{border-left:3px solid var(--emerald); background:var(--surface-2); border-radius:10px; padding:22px 26px; margin-top:30px;}
+  .skill-section.alt .callout{background:#fff; border:1px solid var(--line); border-left:3px solid var(--emerald);}
+  .callout .tl-label{font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--emerald); margin-bottom:8px;}
+  .callout p{font-size:14.5px; color:var(--text); line-height:1.6; margin:0;}
 </style>
 </head>
 <body>
@@ -179,6 +193,7 @@
       <a href="#skill-01">Strategy</a>
       <a href="#skill-02">Design</a>
       <a href="#skill-03">Community</a>
+      <a href="#skill-04">Case Study</a>
     </div>
     <a class="nav-cta" href="mailto:hoanggnhungg2902@gmail.com">SAY HELLO →</a>
   </div>
@@ -259,6 +274,11 @@
         <h3>Community, Customer Support & Mentorship</h3>
         <p>Moderating communities, supporting customers, and growing people alongside content.</p>
       </a>
+      <a class="card" href="#skill-04">
+        <div class="num">04</div>
+        <h3>Seasonal Trend Recovery</h3>
+        <p>Spotting a seasonal window and reviving a dormant channel — and what it taught me about retention.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -270,7 +290,7 @@
       <h2>YouTube Channel Growth Strategy & Performance Analytics</h2>
       <div>
         <p>In my role as a Digital Content Creator at Magic Music, I was responsible for researching, launching, and growing multiple YouTube channels from scratch.</p>
-        <p>My expertise lies in combining <strong>market research</strong>, <strong>SEO-driven content planning</strong>, and <strong>performance analytics</strong> (CTR, retention, RPM) to identify what works — and quickly course-correct when it doesn't. When growth stalled on my biggest channel, I diagnosed the cause and tested a new content direction that recovered revenue to ~$2,500.</p>
+        <p>My expertise lies in combining <strong>market research</strong>, <strong>SEO-driven content planning</strong>, and <strong>performance analytics</strong> (CTR, retention, RPM) to identify what works — and quickly course-correct when it doesn't. See the trend-response case study below for how I diagnosed and recovered a stalled channel.</p>
       </div>
     </div>
     <div class="metrics">
@@ -364,6 +384,31 @@
   <div class="post-card"><img src="images/social8.png" style="width:100%; display:block;"></div>
   <div class="post-card"><img src="images/social9.png" style="width:100%; display:block;"></div>
 </div>
+  </section>
+
+<section class="skill-section alt reveal" id="skill-04">
+  <div class="wrap">
+    <div class="eyebrow">04 — TREND RESPONSE</div>
+    <div class="skill-head">
+      <h2>Seasonal Trend Recovery: Reviving a Dormant Channel</h2>
+      <div>
+        <p>A separate Techno channel (14.1K subscribers) had gone quiet for a stretch, with 48-hour views falling to just <strong>1,000–2,000</strong> per video.</p>
+        <p>Spotting a seasonal window, I pivoted the channel toward <strong>Christmas-themed techno</strong> — new tracks, new thumbnail direction — to ride the holiday search spike. The channel recovered to roughly <strong>$2,500</strong> in revenue within a few weeks, though the lift faded once the season passed.</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step"><div class="tl-label">Context</div><p>Channel inactive, 48hr views down to 1K–2K.</p></div>
+      <div class="tl-step"><div class="tl-label">Action</div><p>Pivoted content & thumbnails to a seasonal theme.</p></div>
+      <div class="tl-step"><div class="tl-label">Result</div><p>Recovered to ~$2,500 in revenue in a few weeks.</p></div>
+      <div class="tl-step"><div class="tl-label">Lesson</div><p>Lift faded post-season — trend wins don't equal retention.</p></div>
+    </div>
+
+    <div class="callout">
+      <div class="tl-label">What I took from it</div>
+      <p>Trend-jacking can create a real short-term lift, but it doesn't fix retention on its own. This shaped how I now think about pairing trend-driven content with an evergreen plan — bringing in the audience a trend attracts, without losing them once it passes.</p>
+    </div>
+  </div>
 </section>
 
 <div class="waveform" aria-hidden="true"></div>
